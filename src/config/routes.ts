@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express'
 const route = express.Router();
 import { Company } from '../App/Organization/index';
 
@@ -10,4 +10,4 @@ route.get('/searchByName/:nome', Company.findByName);
 route.put('/edit/:id', Company.edit);
 route.delete('/erase/:id', Company.erase);
 
-module.exports = route;
+module.exports = route
